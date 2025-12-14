@@ -1,30 +1,29 @@
-# MekanBul Backend Projesi
+**Demo:** [https://mekanbul-backend-odev-gamma.vercel.app/](https://mekanbul-backend-odev-gamma.vercel.app/)
 
-Bu proje, mekan verilerini yönetmek için geliştirilmiş bir RESTful API servisidir.
 
-**Canlı Demo:** [https://mekanbul-backend-odev-gamma.vercel.app/](https://mekanbul-backend-odev-gamma.vercel.app/)
+##  Kısa Açıklama
+*	API,mekan(venue) verilerini yönetir:listeleme,ekleme,görüntüleme,güncelleme ve silme
+*	MongoDB Cloud kullanır.
 
-## 📌 Kısa Açıklama
-* API, mekan (venue) verilerini yönetir: listeleme, ekleme, görüntüleme, güncelleme ve silme.
-* Veritabanı olarak **MongoDB Cloud** kullanır.
-* Backend servisi **Vercel** üzerinde çalışmaktadır.
 
-## 🚀 API Endpoints
+##  API Endpoints
 
-### Mekan İşlemleri
 * **Tüm Mekanları Listele:** `GET /api/venues`
 * **Yeni Mekan Ekle:** `POST /api/venues`
 * **Mekan Detayını Getir:** `GET /api/venues/:venueid`
 * **Mekanı Güncelle:** `PUT /api/venues/:venueid`
 * **Mekanı Sil:** `DELETE /api/venues/:venueid`
-
-### Yorum İşlemleri
 * **Yorum Ekle:** `POST /api/venues/:venueid/comments`
 * **Yorum Getir:** `GET /api/venues/:venueid/comments/:commentid`
 * **Yorum Güncelle:** `PUT /api/venues/:venueid/comments/:commentid`
 * **Yorum Sil:** `DELETE /api/venues/:venueid/comments/:commentid`
 
-## 🧪 Postman Test Sonuçları
+
+Postman Test Sonucu Aşağıda Postman ile alınmış test sonuçlarının ekran görüntüsü bulunmaktadır.
+
+
+
+##  Postman Test Sonuçları
 
 Aşağıda API testlerinin sonuçları yer almaktadır:
 
