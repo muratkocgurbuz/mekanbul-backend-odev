@@ -1,3 +1,7 @@
+# MekanBul Backend Projesi
+
+Bu proje, mekan verilerini yönetmek için geliştirilmiş bir RESTful API servisidir.
+
 **Canlı Demo:** [https://mekanbul-backend-odev-gamma.vercel.app/](https://mekanbul-backend-odev-gamma.vercel.app/)
 
 ## 📌 Kısa Açıklama
@@ -5,55 +9,48 @@
 * Veritabanı olarak **MongoDB Cloud** kullanır.
 * Backend servisi **Vercel** üzerinde çalışmaktadır.
 
+## 🚀 API Endpoints
 
-API Endpoints
+### Mekan İşlemleri
+* **Tüm Mekanları Listele:** `GET /api/venues`
+* **Yeni Mekan Ekle:** `POST /api/venues`
+* **Mekan Detayını Getir:** `GET /api/venues/:venueid`
+* **Mekanı Güncelle:** `PUT /api/venues/:venueid`
+* **Mekanı Sil:** `DELETE /api/venues/:venueid`
 
-Tüm Mekanları listele: GET /api/venues
-Yeni Mekan Ekle: POST /api/venues
-Mekan Detayını Getir: GET /api/venues/:venueid
-Mekanı Güncelle: PUT /api/venues/:venueid
-Mekanı Sil: DELETE /api/venues/:venueid
-Yorum Ekle(Mekana): POST /api/venues/:venueid/comments
-Yorum Getir: GET /api/venues/:venueid/comments/:commentid
-Yorum Güncelle: PUT /api/venues/:venueid/comments/:commentid
-Yorum Sil: DELETE /api/venues/:venueid/comments/:commentid
+### Yorum İşlemleri
+* **Yorum Ekle:** `POST /api/venues/:venueid/comments`
+* **Yorum Getir:** `GET /api/venues/:venueid/comments/:commentid`
+* **Yorum Güncelle:** `PUT /api/venues/:venueid/comments/:commentid`
+* **Yorum Sil:** `DELETE /api/venues/:venueid/comments/:commentid`
 
-Postman Test Sonucu Aşağıda Postman ile alınmış test sonuçlarının ekran görüntüsü bulunmaktadır.
+## 🧪 Postman Test Sonuçları (Ekran Görüntüleri)
 
+Aşağıda API testlerinin sonuçları yer almaktadır:
 
-## 📸 Postman Test Sonuçları
+### 1. Mekan Ekle (Add Venue)
+![Add Venue](tests/Add%20Venue.png)
 
-### ➕ Add Venue
-![Add Venue](Add Venue.png)
+### 2. Yakındaki Mekanları Listele (List Nearby Venues)
+![List Nearby Venues](tests/List%20Nearby%20Venues.png)
 
-### 📋 List Nearby Venues
-![List Nearby Venues](List Nearby Venues.png)
+### 3. Mekan Getir (Get Venue)
+![Get Venue](tests/Get%20Venue.png)
 
-### 🔍 Get Venue
-![Get Venue](Get Venue.png)
+### 4. Mekan Güncelle (Update Venue)
+![Update Venue](tests/Update%20Vanue.png)
 
-### ✏️ Update Venue
-![Update Venue](Update Vanue.png)
+### 5. Mekan Sil (Delete Venue)
+![Delete Venue](tests/Delete%20Vanue.png)
 
-### 💬 Add Comment
-![Add Comment](Add Comment.png)
+### 6. Yorum Ekle (Add Comment)
+![Add Comment](tests/Add%20Comment.png)
 
-### 🔍 Get Comment
-![Get Comment](Get comment.png)
+### 7. Yorum Getir (Get Comment)
+![Get Comment](tests/Get%20comment.png)
 
-### 📝 Update Comment
-![Update Comment](Update Comment.png)
+### 8. Yorum Güncelle (Update Comment)
+![Update Comment](tests/Update%20Comment.png)
 
-### 🗑️ Delete Comment
-![Delete Comment](Delete Comment.png)
-
-### ✏️ Update Venue
-![Update Venue](Update Vanue.png)
-
-### ❌ Delete Venue
-![Delete Venue](Delete Vanue.png)
-
-
-
-
-
+### 9. Yorum Sil (Delete Comment)
+![Delete Comment](tests/Delete%20Comment.png)
