@@ -24,7 +24,7 @@ Bu proje, mekan verilerini yönetmek için geliştirilmiş bir RESTful API servi
 * **Yorum Güncelle:** `PUT /api/venues/:venueid/comments/:commentid`
 * **Yorum Sil:** `DELETE /api/venues/:venueid/comments/:commentid`
 
-## 🧪 Postman Test Sonuçları (Ekran Görüntüleri)
+## 🧪 Postman Test Sonuçları
 
 Aşağıda API testlerinin sonuçları yer almaktadır:
 
