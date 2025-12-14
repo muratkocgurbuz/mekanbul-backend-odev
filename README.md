@@ -24,34 +24,34 @@ Postman Test Sonucu Aşağıda Postman ile alınmış test sonuçlarının ekran
 ## 📸 Postman Test Sonuçları
 
 ### ➕ Add Venue
-![Add Venue](Add Venue.PNG)
+![Add Venue](Add Venue.png)
 
 ### 📋 List Nearby Venues
-![List Nearby Venues](List Nearby Venues.PNG)
+![List Nearby Venues](List Nearby Venues.png)
 
 ### 🔍 Get Venue
-![Get Venue](Get Venue.PNG)
+![Get Venue](Get Venue.png)
 
 ### ✏️ Update Venue
-![Update Venue](Update Vanue.PNG)
+![Update Venue](Update Vanue.png)
 
 ### 💬 Add Comment
-![Add Comment](Add Comment.PNG)
+![Add Comment](Add Comment.png)
 
 ### 🔍 Get Comment
-![Get Comment](Get comment.PNG)
+![Get Comment](Get comment.png)
 
 ### 📝 Update Comment
-![Update Comment](Update Comment.PNG)
+![Update Comment](Update Comment.png)
 
 ### 🗑️ Delete Comment
-![Delete Comment](Delete Comment.PNG)
+![Delete Comment](Delete Comment.png)
 
 ### ✏️ Update Venue
-![Update Venue](Update Vanue.PNG)
+![Update Venue](Update Vanue.png)
 
 ### ❌ Delete Venue
-![Delete Venue](Delete Vanue.PNG)
+![Delete Venue](Delete Vanue.png)
 
 
 
