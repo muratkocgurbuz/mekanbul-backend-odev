@@ -6,30 +6,31 @@ const createResponse = function (res, status, content) {
 }
 const updateVenue=async function(req,res){
     try{
-        const updatedVenue=await Venue.findByIdAndUpdate(
-            req.params.venueid,
-            {
-                ...req.body,
-                coordinates:[req.body.lat,req.body.long],
-hours: [
+const updatedVenue = await Venue.findByIdAndUpdate(
+  req.params.venueid,
   {
-    days: req.body.days1,
-    open: req.body.open1,
-    close: req.body.close1,
-    isClosed: req.body.isClosed1
+    ...req.body,
+    coordinates: [req.body.lat, req.body.long],
+    hours: [
+      {
+        days: req.body.days1,
+        open: req.body.open1,
+        close: req.body.close1,
+        isClosed: req.body.isClosed1
+      },
+      {
+        days: req.body.days2,
+        open: req.body.open2,
+        close: req.body.close2,
+        isClosed: req.body.isClosed2
+      }
+    ]
   },
   {
-    days: req.body.days2,
-    open: req.body.open2,
-    close: req.body.close2,
-    isClosed: req.body.isClosed2
+    new: true,
+    runValidators: true
   }
-]
-
-
-            },
-            {new:true}
-        );
+);
         createResponse(res,201,updatedVenue);
     }catch(error){
        createResponse(res,400,{status:"Güncelleme başarısız.",error});
