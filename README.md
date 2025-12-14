@@ -29,28 +29,28 @@ Bu proje, mekan verilerini yönetmek için geliştirilmiş bir RESTful API servi
 Aşağıda API testlerinin sonuçları yer almaktadır:
 
 ### 1. Mekan Ekle (Add Venue)
-![Add Venue](tests/Add%20Venue.png)
+![Add Venue](./tests/AddVenue.png)
 
 ### 2. Yakındaki Mekanları Listele (List Nearby Venues)
-![List Nearby Venues](tests/List%20Nearby%20Venues.png)
+![List Nearby Venues](./tests/ListNearbyVenues.png)
 
 ### 3. Mekan Getir (Get Venue)
-![Get Venue](tests/Get%20Venue.png)
+![Get Venue](./tests/GetVenue.png)
 
 ### 4. Mekan Güncelle (Update Venue)
-![Update Venue](tests/Update%20Vanue.png)
+![Update Venue](./tests/UpdateVanue.png)
 
 ### 5. Mekan Sil (Delete Venue)
-![Delete Venue](tests/Delete%20Vanue.png)
+![Delete Venue](./tests/DeleteVanue.png)
 
 ### 6. Yorum Ekle (Add Comment)
-![Add Comment](tests/Add%20Comment.png)
+![Add Comment](./tests/AddComment.png)
 
 ### 7. Yorum Getir (Get Comment)
-![Get Comment](tests/Get%20comment.png)
+![Get Comment](./tests/Getcomment.png)
 
 ### 8. Yorum Güncelle (Update Comment)
-![Update Comment](tests/Update%20Comment.png)
+![Update Comment](./tests/UpdateComment.png)
 
 ### 9. Yorum Sil (Delete Comment)
-![Delete Comment](tests/Delete%20Comment.png)
+![Delete Comment](./tests/DeleteComment.png)
