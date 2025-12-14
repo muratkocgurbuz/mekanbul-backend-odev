@@ -20,12 +20,40 @@ Yorum Sil: DELETE /api/venues/:venueid/comments/:commentid
 
 Postman Test Sonucu Aşağıda Postman ile alınmış test sonuçlarının ekran görüntüsü bulunmaktadır.
 
-Add Venue.PNG
-List Nearby Venues.PNG
-Get Venue.PNG
-Update Vanue.PNG
-Add Comment.PNG
-Get comment.PNG
-Update Comment.PNG
-Delete Comment.PNG
-Delete Vanue.PNG
+
+## 📸 Postman Test Sonuçları
+
+### ➕ Add Venue
+![Add Venue](Add Venue.PNG)
+
+### 📋 List Nearby Venues
+![List Nearby Venues](List Nearby Venues.PNG)
+
+### 🔍 Get Venue
+![Get Venue](Get Venue.PNG)
+
+### ✏️ Update Venue
+![Update Venue](Update Vanue.PNG)
+
+### 💬 Add Comment
+![Add Comment](Add Comment.PNG)
+
+### 🔍 Get Comment
+![Get Comment](Get comment.PNG)
+
+### 📝 Update Comment
+![Update Comment](Update Comment.PNG)
+
+### 🗑️ Delete Comment
+![Delete Comment](Delete Comment.PNG)
+
+### ✏️ Update Venue
+![Update Venue](Update Vanue.PNG)
+
+### ❌ Delete Venue
+![Delete Venue](Delete Vanue.PNG)
+
+
+
+
+
