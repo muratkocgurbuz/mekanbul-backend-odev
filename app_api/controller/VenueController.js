@@ -4,37 +4,46 @@ var Venue = mongoose.model("venue");
 const createResponse = function (res, status, content) {
     res.status(status).json(content);
 }
-const updateVenue=async function(req,res){
-    try{
-const updatedVenue = await Venue.findByIdAndUpdate(
-  req.params.venueid,
-  {
-    ...req.body,
-    coordinates: [req.body.lat, req.body.long],
-    hours: [
-      {
-        days: req.body.days1,
-        open: req.body.open1,
-        close: req.body.close1,
-        isClosed: req.body.isClosed1
-      },
-      {
-        days: req.body.days2,
-        open: req.body.open2,
-        close: req.body.close2,
-        isClosed: req.body.isClosed2
-      }
-    ]
-  },
-  {
-    new: true,
-    runValidators: true
-  }
-);
-        createResponse(res,201,updatedVenue);
-    }catch(error){
-       createResponse(res,400,{status:"Güncelleme başarısız.",error});
+const updateVenue = async function (req, res) {
+  try {
+
+    const updateData = {
+      ...req.body,
+      coordinates: [req.body.lat, req.body.long]
+    };
+
+    // ⛔ hours sadece days1 geldiyse eklenecek
+    if (req.body.days1 && req.body.days2) {
+      updateData.hours = [
+        {
+          days: req.body.days1,
+          open: req.body.open1,
+          close: req.body.close1,
+          isClosed: req.body.isClosed1
+        },
+        {
+          days: req.body.days2,
+          open: req.body.open2,
+          close: req.body.close2,
+          isClosed: req.body.isClosed2
+        }
+      ];
     }
+
+    const updatedVenue = await Venue.findByIdAndUpdate(
+      req.params.venueid,
+      updateData,
+      {
+        new: true,
+        runValidators: true
+      }
+    );
+
+    createResponse(res, 201, updatedVenue);
+
+  } catch (error) {
+    createResponse(res, 400, { status: "Güncelleme başarısız.", error });
+  }
 };
 
 
